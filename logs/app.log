@@ -1,0 +1,18 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+2025-12-11 19:36:14,089 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000
+2025-12-11 19:36:14,089 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-11 19:36:14,091 - INFO -  * Restarting with stat
+2025-12-11 19:36:14,248 - WARNING -  * Debugger is active!
+2025-12-11 19:36:14,248 - INFO -  * Debugger PIN: 224-764-242
+2025-12-11 19:37:06,934 - INFO - 172.19.0.1 - - [11/Dec/2025 19:37:06] "GET /health HTTP/1.1" 200 -
+2025-12-11 19:37:15,838 - INFO - 172.19.0.1 - - [11/Dec/2025 19:37:15] "[35m[1mPOST /books HTTP/1.1[0m" 201 -
+2025-12-11 19:37:15,843 - INFO - GET /books endpoint called
+2025-12-11 19:37:15,847 - INFO - 172.19.0.1 - - [11/Dec/2025 19:37:15] "GET /books HTTP/1.1" 200 -
+2025-12-11 19:37:15,868 - INFO - 172.19.0.1 - - [11/Dec/2025 19:37:15] "DELETE /books/1 HTTP/1.1" 200 -
+2025-12-11 19:37:51,382 - INFO - GET /books endpoint called
+2025-12-11 19:37:51,387 - INFO - 172.19.0.1 - - [11/Dec/2025 19:37:51] "GET /books HTTP/1.1" 200 -
+2025-12-11 19:38:00,877 - INFO - 172.19.0.1 - - [11/Dec/2025 19:38:00] "[35m[1mPOST /books HTTP/1.1[0m" 201 -

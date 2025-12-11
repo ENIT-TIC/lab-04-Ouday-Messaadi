@@ -1,0 +1,24 @@
+FROM python:3.11-slim
+
+# Create user
+RUN useradd -ms /bin/bash apiuser
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY app.py .
+
+# Create a logs directory
+RUN mkdir logs && chown -R apiuser:apiuser logs
+# Create a data directory for SQLite DB
+RUN mkdir data && chown -R apiuser:apiuser data
+
+# Switch to non-root user
+USER apiuser
+
+EXPOSE 5000
+
+# Run Flask and redirect logs
+CMD python app.py > logs/app.log 2>&1
